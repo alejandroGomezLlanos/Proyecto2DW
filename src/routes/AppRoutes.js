@@ -1,8 +1,8 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { Navigate } from "react-router-dom";
-import { Login } from "../pages/Login";
-import { Home } from "../pages/Home";
-import { CreateAcount } from "../pages/CreateAcount";
+import Login from "../pages/Login";
+import Home from "../pages/Home";
+import CreateAcount from "../pages/CreateAcount";
 
 export const AppRoutes = () => {
   return (
