@@ -17,9 +17,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <BrowserRouter>
-    <Routes>
-      <AppRoutes />
-    </Routes>
+    <AppRoutes />
   </BrowserRouter>
 );
 //profe, intenté usar rutas de esta forma, pero
