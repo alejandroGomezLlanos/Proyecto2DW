@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+//import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 //import CreateAcount from "./pages/CreateAcount";
 import { BrowserRouter } from "react-router-dom";
@@ -17,12 +17,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/Login" element={<Login />} />
-      <Route path="/Home" element={<Home />} />
-      <Route path="/CreateAcount" element={<CreateAcount />} />
-      <Route path="/*" element={<Navigate to="/login" />} />
-    </Routes>
+    <AppRoutes />
   </BrowserRouter>
 );
 //profe, intenté usar rutas de esta forma, pero
