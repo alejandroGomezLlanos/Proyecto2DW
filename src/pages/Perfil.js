@@ -9,6 +9,13 @@ export default function Perfil() {
   return (
     <>
       <Banner />
+      <div class="card" style={{ width: "18rem" }}>
+        <img
+          class="img-thumbnail"
+          src="./abogado.jpg"
+          alt="Card image cap"
+        ></img>
+      </div>
       <Info />
       <Star />
     </>

@@ -3,21 +3,37 @@ import { Navigate } from "react-router-dom";
 import Login from "../pages/Login";
 import Home from "../pages/Home";
 import CreateAcount from "../pages/CreateAcount";
+import Perfil from "../pages/Perfil";
 
 export const AppRoutes = () => {
   return (
     <>
-      <h1> hola </h1>
-      <Link to="/">Home</Link>
-      <Link to="/Home">Home</Link>
-      <Link to="/Login">Login</Link>
-      <Link to="/CreateAcount">CreateAcount</Link>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">
+            Login
+          </li>
+          <li class="breadcrumb-item">
+            <a href="Home">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="CreateAcount">CreateAcount</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="Perfil">Perfil</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Data
+          </li>
+        </ol>
+      </nav>
 
       <Routes>
         <Route path="/Login" element={<Login />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/CreateAcount" element={<CreateAcount />} />
-        <Route path="/*" element={<Navigate to="/login" />} />
+        <Route path="/Perfil" element={<Perfil />} />
+        <Route path="/*" element={<Navigate to="/Login" />} />
       </Routes>
     </>
   );
